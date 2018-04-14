@@ -1,4 +1,7 @@
 
 body {
-  background-color: green;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/2042414/original_b0139bb714f2acd5598b389ae5caabe9.gif");
+  background-repeat: repeat;
 }
