@@ -1,0 +1,19 @@
+#Lichtenstein {
+  height:800px;
+  width: 100%;
+  background-image: url("http://i.vimeocdn.com/video/444787390_1280x720.jpg");
+  background-size: cover;
+}
+
+#Lichtenstein h1 {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 72px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 400px;
+}
+
+#Lichtenstein p {
+  color: white;
+}
