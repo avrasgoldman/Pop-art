@@ -1,28 +1,37 @@
 var h = 800;
 var w = window.innerWidth / 2;
-var spacer = 8;
-var dotSize = 5;
+var spacer = 10;
+var maxDotSize = 6;
+var minDotSize = 2;
+var maxDist;
+var distAdjust = 0.6;
 var rowNum;
 
 function setup() {
   var bendayBg = createCanvas(w, h);
   bendayBg.parent('benday');
+  maxDist = dist(0, 0, w, h) * distAdjust;
+}
+
+function draw() {
   background(255, 255, 255);
-  rowNum = 0;
   fill(0, 0, 0);
   noStroke();
-  for (var y = 0; y < h+1; y += spacer) {
-    for (var x = 0; x < w+1; x += spacer) {
-      if ( rowNum % 2 == 0) {
-        ellipse(x + spacer/2, y + spacer/2, dotSize, dotSize);
+
+  rowNum = 0;
+  for (var y = 0; y < h + spacer; y += spacer) {
+    for (var x = 0; x < w + spacer; x += spacer) {
+      var mouseDist = dist(mouseX, mouseY, x, y);
+      var dotSize = map (mouseDist, 0, maxDist, minDotSize, maxDotSize, true);
+      if( rowNum % 2 == 0) {
+        ellipse (x + spacer / 2, y + spacer / 2, dotSize, dotSize);
       } else {
-        ellipse(x, y + spacer/2, dotSize, dotSize);
+        ellipse (x, y + spacer / 2, dotSize, dotSize);
       }
     }
     rowNum ++;
   }
 }
-
 
 // // Height of canvas is the same as heigh of div
 // var h = 800;
