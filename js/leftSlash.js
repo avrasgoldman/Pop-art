@@ -5,22 +5,22 @@ let dividerLeft = new Rune({
   height: 32,
 });
 
-let topArray = [];
-let bottomArray = [];
-let gap = 15;
-let numLines = 40;
-let dividerHeight = 30;
+let arrayTop = [];
+let arrayBottom = [];
+let gapLeft = 15;
+let numberLines = 40;
+let divHeight = 30;
 
 for (let i = 0; i < numLines; i++) {
-  topArray.push(gap * i);
+  arrayTop.push(gapLeft * i);
 }
 
 for (let i = 1; i <= numLines; i++) {
-  bottomArray.push(gap * i);
+  arrayBottom.push(gapLeft * i);
 }
 
 for (let i = 0; i < numLines; i++) {
-  dividerLeft.line(topArray[i], 0, bottomArray[i], dividerHeight)
+  dividerLeft.line(arrayTop[i], 0, arrayBottom[i], divHeight)
     .stroke('#7f8c8d')
     .strokeWidth(5);
 }
