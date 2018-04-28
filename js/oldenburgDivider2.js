@@ -1,6 +1,6 @@
 //create stage for SVG
 let r3 = new Rune({
-  container: "body",
+  container: "#oldenburgDivider2",
   width: 600,
   height: 80,
 });
