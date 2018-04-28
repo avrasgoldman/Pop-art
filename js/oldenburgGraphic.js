@@ -1,6 +1,6 @@
 //create stage for SVG
 let r = new Rune({
-  container: "body",
+  container: '#oldenBurgGraphic',
   width: 800,
   height: 800,
   debug: false
