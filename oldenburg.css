@@ -9,7 +9,7 @@
 
 #oldenburg p {
   color: #ecf0f1;
-  width: 800px;
+  width: 700px;
   font-family: "Lato", sans-serif;
   line-height: 24px;
   padding-top: 0px;
@@ -35,7 +35,6 @@
   font-family: "Lato", sans-serif;
   color: #ecf0f1;
   font-size: 40px;
-  background-color: red;
 }
 
 #oldenburg a {
@@ -46,5 +45,11 @@
   width: 600px;
   height: 32px;
   padding: 10px;
+  margin: auto;
+}
+
+#dotDivider {
+  width: 600px;
+  height: 80px;
   margin: auto;
 }
