@@ -2,7 +2,7 @@
 let r2 = new Rune({
   container: "#oldenburgDivider1",
   width: 600,
-  height: 80,
+  height: 32,
 });
 
 let topArray = [];
