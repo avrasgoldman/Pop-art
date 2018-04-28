@@ -1,6 +1,6 @@
 //create stage for SVG
-let r2 = new Rune({
-  container: "#oldenburgDivider1",
+let dividerRight = new Rune({
+  container: "#rightSlash",
   width: 600,
   height: 32,
 });
@@ -20,9 +20,9 @@ for (let i = 0; i < numLines; i++) {
 }
 
 for (let i = 0; i < numLines; i++) {
-  let l = r2.line(topArray[i], 0, bottomArray[i], dividerHeight)
+  let l = dividerRight.line(topArray[i], 0, bottomArray[i], dividerHeight)
     .stroke('#7f8c8d')
     .strokeWidth(5);
 }
 
-r2.draw();
+dividerRight.draw();

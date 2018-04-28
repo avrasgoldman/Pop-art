@@ -1,5 +1,5 @@
 //create stage for SVG
-let r4 = new Rune({
+let dots = new Rune({
   container: "#dotDivider",
   width: 600,
   height: 80,
@@ -27,7 +27,7 @@ function stackCircles(x, y) {
       radius = 10;
       clr = '#7f8c8d';
     }
-    let c = r4.circle(x, y, r)
+    let c = dots.circle(x, y, r)
       .stroke(false)
       .fill(clr);
   }
@@ -35,4 +35,4 @@ function stackCircles(x, y) {
 
 makeCircles();
 
-r4.draw();
+dots.draw();
